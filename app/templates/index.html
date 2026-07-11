@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <h1>Explore the World with TravelEase 🌍</h1>
+
+    <p>
+        Discover amazing destinations, comfortable stays,
+        and unforgettable travel experiences.
+    </p>
+
+    <div class="search-box">
+
+        <select>
+            <option>Select Destination</option>
+            <option>Paris</option>
+            <option>Dubai</option>
+            <option>Tokyo</option>
+        </select>
+
+        <input type="date">
+
+        <input type="date">
+
+       <a href="{{ url_for('main.booking') }}" class="search-btn">
+    Search
+</a>
+
+    </div>
+
+    <div class="hero-buttons">
+
+        <a href="#destinations" class="btn-primary">
+            Explore Now
+        </a>
+
+        <a href="#destinations" class="btn-secondary">
+            View Packages
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section class="destinations" id="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="destination-grid">
+
+
+        <!-- PARIS -->
+
+        <div class="card">
+
+            <span class="badge">Best Seller</span>
+
+            <img
+                src="{{ url_for('static', filename='images/paris.png') }}"
+                alt="Paris">
+
+            <div class="card-content">
+
+                <div class="card-top">
+
+                    <span class="rating">⭐ 5</span>
+
+                    <span class="heart">♡</span>
+
+                </div>
+
+                <span class="country">📍 France</span>
+
+                <h3>🇫🇷 Paris</h3>
+
+                <p>
+                    Experience the charm of Paris,
+                    the Eiffel Tower and beautiful city streets.
+                </p>
+
+                <h4>₹89,999</h4>
+
+                <a href="{{ url_for('main.booking') }}"
+                   class="card-explore-btn">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOKYO -->
+
+        <div class="card">
+
+            <span class="badge">Popular</span>
+
+            <img
+                src="{{ url_for('static', filename='images/tokyo.png') }}"
+                alt="Tokyo">
+
+            <div class="card-content">
+
+                <div class="card-top">
+
+                    <span class="rating">⭐ 5</span>
+
+                    <span class="heart">♡</span>
+
+                </div>
+
+                <span class="country">📍 Japan</span>
+
+                <h3>🇯🇵 Tokyo</h3>
+
+                <p>
+                    Discover futuristic skylines,
+                    traditional temples and Japanese culture.
+                </p>
+
+                <h4>₹94,999</h4>
+
+                <a href="{{ url_for('main.booking') }}"
+                   class="card-explore-btn">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- DUBAI -->
+
+        <div class="card">
+
+            <span class="badge">Luxury</span>
+
+            <img
+                src="{{ url_for('static', filename='images/dubai.png') }}"
+                alt="Dubai">
+
+            <div class="card-content">
+
+                <div class="card-top">
+
+                    <span class="rating">⭐ 5</span>
+
+                    <span class="heart">♡</span>
+
+                </div>
+
+                <span class="country">📍 UAE</span>
+
+                <h3>🇦🇪 Dubai</h3>
+
+                <p>
+                    Discover modern architecture,
+                    luxury experiences and desert adventures.
+                </p>
+
+                <h4>₹69,999</h4>
+
+                <a href="{{ url_for('main.booking') }}"
+                   class="card-explore-btn">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <h2>Why Choose TravelEase?</h2>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial">
+
+            <h3>🌍 Easy Exploration</h3>
+
+            <p>
+                Discover popular destinations through a simple
+                and user-friendly travel platform.
+            </p>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <h3>🔒 Secure Access</h3>
+
+            <p>
+                User accounts are protected using secure
+                password hashing and authentication.
+            </p>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <h3>✈️ Simple Booking</h3>
+
+            <p>
+                Create, view and manage travel bookings
+                through an easy booking system.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <h2>About TravelEase</h2>
+
+        <p>
+            TravelEase is a travel booking web application developed as a
+            demonstration project using Flask, HTML, CSS, JavaScript and
+            SQLite. It provides a simple platform where users can explore
+            destinations, create an account, log in securely and manage
+            travel bookings.
+        </p>
+
+        <p>
+            The project demonstrates modern web development concepts
+            including user authentication, database integration,
+            responsive design and dynamic content rendering using
+            Flask templates.
+        </p>
+
+        <div class="about-features">
+
+            <div class="feature-card">
+
+                <h3>🌍 Explore</h3>
+
+                <p>
+                    Browse popular travel destinations
+                    from around the world.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>🔒 Secure</h3>
+
+                <p>
+                    User registration and login with
+                    securely hashed passwords.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>✈️ Book</h3>
+
+                <p>
+                    Create and manage travel bookings
+                    through a simple interface.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+ 
+
+<section class="contact" id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+
+        <p>
+            Have questions about TravelEase? Explore the platform
+            to discover destinations and manage your travel bookings
+            through a simple and convenient experience.
+        </p>
+
+        <p><strong>Email:</strong> support@travelease.example</p>
+
+        <p><strong>Phone:</strong> +00 00000 00000</p>
+
+        <p><strong>Availability:</strong> Monday - Friday</p>
+
+        <p class="demo-note">
+            This is a demonstration website created for educational purposes.
+            The contact information shown above is fictional.
+        </p>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

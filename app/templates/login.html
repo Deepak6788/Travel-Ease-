@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<section class="login-page">
+
+    <div class="login-box">
+
+        <h2>Welcome Back</h2>
+
+        <p>Login to your TravelEase account</p>
+
+        <form method="POST">
+
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+
+                {{ form.email.label }}
+
+                {{ form.email(class="form-control") }}
+
+            </div>
+
+            <div class="form-group">
+
+                {{ form.password.label }}
+
+                {{ form.password(class="form-control") }}
+
+            </div>
+
+            <div class="form-group">
+
+                {{ form.submit(class="btn-primary") }}
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

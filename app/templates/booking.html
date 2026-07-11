@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+Book Trip
+{% endblock %}
+
+{% block content %}
+
+<section class="login-page">
+
+    <div class="login-box">
+
+        <h2>Book Your Trip ✈️</h2>
+
+        <form method="POST">
+
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.destination.label }}
+                {{ form.destination(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.travel_date.label }}
+                {{ form.travel_date(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.people.label }}
+                {{ form.people(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.submit(class="btn-primary") }}
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
