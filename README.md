@@ -121,3 +121,22 @@ Then open the local address displayed in the terminal, usually:
 ```text
 http://127.0.0.1:5000
 ```
+
+---
+
+## 📸 Application Screenshots
+
+### Home Page
+![Home Page](Pictures/Home.jpeg)
+
+### Destinations
+![Destinations](Pictures/Destinations.jpeg)
+
+### Registration Page
+![Registration Page](Pictures/Registration.jpeg)
+
+### About Section
+![About Section](Pictures/About.jpeg)
+
+### Contact Section
+![Contact Section](Pictures/Contact.jpeg)
