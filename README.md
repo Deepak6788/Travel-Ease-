@@ -76,3 +76,48 @@ TravelEase/
 ├── config.py
 ├── requirements.txt
 └── run.py
+---
+
+## 🚀 Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Deepak6788/Travel-Ease-.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd Travel-Ease-
+```
+
+### 3. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 4. Activate the virtual environment
+
+```bash
+venv\Scripts\activate
+```
+
+### 5. Install required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Run the application
+
+```bash
+python run.py
+```
+
+Then open the local address displayed in the terminal, usually:
+
+```text
+http://127.0.0.1:5000
+```
